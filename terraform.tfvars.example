@@ -1,0 +1,27 @@
+# ECS Playground - Tokyo Region Configuration
+# Copy to terraform.tfvars and modify as needed
+
+# Application
+app_name    = "ecs-playground"
+environment = "dev"
+aws_region  = "ap-northeast-1"
+
+# Network
+vpc_cidr               = "10.0.0.0/16"
+availability_zones     = ["ap-northeast-1a", "ap-northeast-1c"]
+public_subnet_cidrs    = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnet_cidrs   = ["10.0.10.0/24", "10.0.20.0/24"]
+
+# ECS Fargate
+ecs_task_cpu             = 256
+ecs_task_memory          = 512
+ecs_service_desired_count = 1
+
+# Application
+app_port          = 5000
+health_check_path = "/health"
+
+# Operational Configuration (adjust for dev/prod)
+log_retention_days          = 1
+ecr_image_retention_count   = 3
+ecr_untagged_retention_days = 1 
