@@ -37,7 +37,8 @@ cd terraform-ecs-pipeline
 
 5. **Access Application**
    ```bash
-   curl https://$(terraform output -raw cloudfront_domain_name)/health
+   # Get the application URL
+   echo "Application URL: https://$(terraform output -raw cloudfront_domain_name)"
    ```
 
 ## 🏗️ Architecture
