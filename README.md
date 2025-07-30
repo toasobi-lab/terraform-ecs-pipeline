@@ -42,7 +42,7 @@ cd terraform-ecs-pipeline
 
 ## 🏗️ Architecture
 
-![AWS ECS Fargate Infrastructure](docs/images/architecture.png)
+![AWS ECS Fargate Infrastructure](images/architecture.png)
 
 **Flow**: User → CloudFront → ALB → Fargate Tasks  
 **Region**: Tokyo (ap-northeast-1)  
