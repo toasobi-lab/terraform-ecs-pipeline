@@ -3,9 +3,6 @@
 > Simple AWS Fargate deployment with Terraform and CI/CD pipeline
 
 ## 📍 Repository
-
-**GitHub**: https://github.com/toasobi-lab/terraform-ecs-pipeline.git
-
 **Clone the repository**:
 ```bash
 git clone https://github.com/toasobi-lab/terraform-ecs-pipeline.git
