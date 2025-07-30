@@ -37,7 +37,6 @@ cd terraform-ecs-pipeline
 
 5. **Access Application**
    ```bash
-   # Get the application URL
    echo "Application URL: https://$(terraform output -raw cloudfront_domain_name)"
    ```
 
