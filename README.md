@@ -65,14 +65,13 @@ terraform destroy
 ```
 
 ### State Cleanup
-
+---
 ```bash
 # Remove Terraform state files
 rm -rf .terraform
 rm -f .terraform.lock.hcl
 rm -f terraform.tfstate
 rm -f terraform.tfstate.backup
-
 ---
 
 **Tech Stack**: Python 3.12 • Flask • Docker • AWS Fargate • Terraform  
